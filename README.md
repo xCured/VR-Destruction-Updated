@@ -14,7 +14,8 @@
 
 ## Find what your meant to be working on:
 
-### Simply follow these instructions:
+
+Simply follow these instructions:
 1. Click on 'ISSUES' on the left hand of your screen
 2. Click on 'BOARD'3. Find your name
 3. You will then see your assigned task with due date
