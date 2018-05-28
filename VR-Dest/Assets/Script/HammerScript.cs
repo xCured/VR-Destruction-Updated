@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HammerScript : MonoBehaviour {
 
-    public int speed;
+    public static int speed;
     Rigidbody rb;
 	// Use this for initialization
 	void Start () {
@@ -16,9 +16,10 @@ public class HammerScript : MonoBehaviour {
       
     }
     // Update is called once per frame
-    void FixedUpdate () {
+   public void FixedUpdate () {
         Vector3 vel = rb.velocity;
         speed = (int)vel.magnitude;
+
         //Debug.Log(speed);
         
     }

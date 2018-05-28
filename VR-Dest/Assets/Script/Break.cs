@@ -1,26 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Break : MonoBehaviour {
     Rigidbody rb; //reference to the rigidbody, if we call RB we instantly know RB = rigidbody
     public int ToolSpeed;
-    GameObject Hammersp;
+    public float StartHealth = 20f;
+    public float health;
+
+    public Image HealthBar;
+    public GameObject HealthBarShow;
+    
     
 	// Use this for initialization
 	void Start () {
         rb = gameObject.GetComponent<Rigidbody>(); // when we call RB we already know its the rigidbody but here we set the RB to getting the component for easy acces.
-    
-       
-        
-	}
+        health = StartHealth;
+
+    }
 
     // Update is called once per frame
     void FixedUpdate() {
+
+        ToolSpeed = HammerScript.speed;
         RayCastThis(); //FixedUpdate for Physics. We call the Raycast function
-        Hammersp.GetComponent<HammerScript>().speed = ToolSpeed;
+        //GameObject.Find("Sledge").GetComponent<HammerScript>().speed = ToolSpeed;
+
         //  GameObject.Find("Hammer").GetComponent<HammerScript>().speed = ToolSpeed;
-        Debug.Log(ToolSpeed);
+        //Debug.Log(Glass);
+       // Debug.Log(ToolSpeed);
 
 	}
 
@@ -49,9 +58,19 @@ public class Break : MonoBehaviour {
 
         if(Coll.gameObject.tag == "Hammer" && ToolSpeed > 3)
         {
+            health -=  10f;
             rb.isKinematic = false;
-            rb.AddForce(Coll.impulse * 1, ForceMode.Impulse);
-            StartCoroutine(DestroyWithDelay());
+            HealthBar.fillAmount = health / StartHealth;
+            
+
+
+            Debug.Log(health);
+            if(health < 10f)
+            {
+                
+                StartCoroutine(DestroyWithDelay());
+                rb.AddForce(Coll.impulse * 1, ForceMode.Impulse);
+            }
         }
     }
     IEnumerator DestroyWithDelay()
@@ -59,4 +78,7 @@ public class Break : MonoBehaviour {
         yield return new WaitForSeconds(3);
         Destroy(gameObject);
     }
+
+
+   
 }
