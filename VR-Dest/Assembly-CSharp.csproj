@@ -67,6 +67,7 @@
     <Compile Include="Assets\GE Common Assets\Scripts\GE_UIResponder.cs" />
     <Compile Include="Assets\Script\Break.cs" />
     <Compile Include="Assets\Script\HammerScript.cs" />
+    <Compile Include="Assets\Script\RayCastCam.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />

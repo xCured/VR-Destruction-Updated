@@ -41,7 +41,8 @@ GameObject:
   - component: {fileID: 4583731017521302}
   - component: {fileID: 20864884041187266}
   - component: {fileID: 124738566681744648}
-  - component: {fileID: 114749721653690352}
+  - component: {fileID: 114246978841263160}
+  - component: {fileID: 114477521196919076}
   m_Layer: 0
   m_Name: Camera (eye)
   m_TagString: MainCamera
@@ -227,6 +228,7 @@ GameObject:
   - component: {fileID: 20393414885101918}
   - component: {fileID: 114853978892776280}
   - component: {fileID: 92324944290102758}
+  - component: {fileID: 114278577378216916}
   m_Layer: 0
   m_Name: Camera (head)
   m_TagString: MainCamera
@@ -423,7 +425,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1802822821519510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 2.88, y: 0.5, z: -4.485}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4089177501289698}
@@ -681,6 +683,37 @@ MonoBehaviour:
   autoLoadSetup: 1
   setups:
   - {fileID: 114978928787950732}
+--- !u!114 &114246978841263160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095963159209208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 4240398876271528}
+  _ears: {fileID: 4017703006513258}
+  wireframe: 0
+--- !u!114 &114278577378216916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1809100873539488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e2f02dc0779694aa82b0ec4ff663f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RayDistance: 500
+  SetActivePls: {fileID: 1569851643766438, guid: 6399aa73434727f4e96e174c60d356a9,
+    type: 2}
+  HealthBar: {fileID: 0}
+  GetHealth: 0
+  GetStarterHealth: 0
 --- !u!114 &114285189597246790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -756,6 +789,22 @@ MonoBehaviour:
   controller: {fileID: 114529479189333058}
   interactUse: {fileID: 0}
   customOrigin: {fileID: 0}
+--- !u!114 &114477521196919076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095963159209208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68e2f02dc0779694aa82b0ec4ff663f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RayDistance: 500
+  SetActivePls: {fileID: 0}
+  HealthBar: {fileID: 0}
+  GetHealth: 0
+  GetStarterHealth: 0
 --- !u!114 &114529479189333058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -912,20 +961,6 @@ MonoBehaviour:
   controllerAttachPoint: {fileID: 0}
   controllerEvents: {fileID: 0}
   interactTouch: {fileID: 0}
---- !u!114 &114749721653690352
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1095963159209208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 4240398876271528}
-  _ears: {fileID: 4017703006513258}
-  wireframe: 0
 --- !u!114 &114771891420315992
 MonoBehaviour:
   m_ObjectHideFlags: 1
