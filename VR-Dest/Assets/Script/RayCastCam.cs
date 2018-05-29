@@ -23,7 +23,7 @@ public class RayCastCam : MonoBehaviour
     {
         // GetHealth = Break.health;
         // GetStarterHealth = Break.StartHealth;
-        Debug.Log(GetHealth);
+        //Debug.Log(GetHealth);
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -38,14 +38,14 @@ public class RayCastCam : MonoBehaviour
             if (hit.transform.tag == ("Base"))
             {
 
-                SetActivePls.GetComponent<Canvas>().enabled = true;
-                Break breakScript = hit.transform.GetComponent<Break>();
-                HealthBar.fillAmount = breakScript.GetDividedHealth(); ;
+                //SetActivePls.GetComponent<Canvas>().enabled = true;
+               // Break breakScript = hit.transform.GetComponent<Break>();
+               // HealthBar.fillAmount = breakScript.GetDividedHealth(); ;
 
             }
             else
             {
-                SetActivePls.GetComponent<Canvas>().enabled = false;
+               // SetActivePls.GetComponent<Canvas>().enabled = false;
             }
 
             //else

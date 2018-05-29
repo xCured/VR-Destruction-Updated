@@ -9,6 +9,14 @@ public class Break : MonoBehaviour
     public int ToolSpeed;
     float StartHealth = 20f;
     float health;
+    float ToolSpeed2;
+    float tools;
+    readonly float maxAOE = 1f;
+    public GameObject Interactable;
+
+
+    public GameObject aoeOrigin;
+
 
     //public GameObject HealthBarShow;
 
@@ -26,7 +34,15 @@ public class Break : MonoBehaviour
 
         ToolSpeed = HammerScript.speed;
         RayCastThis(); //FixedUpdate for Physics. We call the Raycast function
-                       //GameObject.Find("Sledge").GetComponent<HammerScript>().speed = ToolSpeed;
+
+
+        ToolSpeed2 = HammerScript.speed;
+        tools = ToolSpeed2 / 5;
+        if (tools > maxAOE)
+        {
+            tools = 1f;
+        }
+        //GameObject.Find("Sledge").GetComponent<HammerScript>().speed = ToolSpeed;
 
         //  GameObject.Find("Hammer").GetComponent<HammerScript>().speed = ToolSpeed;
         // Debug.Log(health);
@@ -54,24 +70,35 @@ public class Break : MonoBehaviour
 
     }
 
+
     void OnCollisionEnter(Collision Coll)
     {
+        ContactPoint contact = Coll.contacts[0];
 
-        if (Coll.gameObject.tag == "Hammer" && ToolSpeed > 3)
+        if (Coll.gameObject.tag == "Hammer"  && ToolSpeed > 3)
         {
             health -= 10f;
             rb.isKinematic = false;
 
+            GameObject AOEClone = (GameObject)Instantiate(aoeOrigin, contact.point, Quaternion.identity);
+             AOEClone.transform.Rotate(new Vector3(90, 90, 90));
+
+            AOEClone.GetComponent<AreaOfEffect>().setSize(tools);
+           Destroy(AOEClone);
 
 
-
-            Debug.Log(health);
+            //Debug.Log(health);
             if (health < 10f)
             {
 
                 StartCoroutine(DestroyWithDelay());
                 rb.AddForce(Coll.impulse * 1, ForceMode.Impulse);
             }
+        }
+
+        if(Coll.gameObject.tag == "AOE")
+        {
+            rb.isKinematic = false;
         }
     }
     IEnumerator DestroyWithDelay()
