@@ -12,8 +12,7 @@ public class Break : MonoBehaviour
     float ToolSpeed2;
     float tools;
     readonly float maxAOE = 1f;
-    public GameObject Interactable;
-
+    
 
     public GameObject aoeOrigin;
 
@@ -26,11 +25,13 @@ public class Break : MonoBehaviour
     {
         rb = gameObject.GetComponent<Rigidbody>(); // when we call RB we already know its the rigidbody but here we set the RB to getting the component for easy acces.
         health = StartHealth;
+        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        
 
         ToolSpeed = HammerScript.speed;
         RayCastThis(); //FixedUpdate for Physics. We call the Raycast function
@@ -80,11 +81,20 @@ public class Break : MonoBehaviour
             health -= 10f;
             rb.isKinematic = false;
 
+            PointSystem ScoreValue = gameObject.GetComponent<PointSystem>();
+            HammerScript Hammer = Coll.gameObject.GetComponent<HammerScript>();
+
+            Hammer.ShowScore(ScoreValue.givenPoints);
+            
+           // hammer.ShowScore(pointsGiven);
+
+
             GameObject AOEClone = (GameObject)Instantiate(aoeOrigin, contact.point, Quaternion.identity);
              AOEClone.transform.Rotate(new Vector3(90, 90, 90));
 
             AOEClone.GetComponent<AreaOfEffect>().setSize(tools);
            Destroy(AOEClone);
+            rb.AddForce(Coll.impulse * 1, ForceMode.Impulse);
 
 
             //Debug.Log(health);
@@ -92,7 +102,7 @@ public class Break : MonoBehaviour
             {
 
                 StartCoroutine(DestroyWithDelay());
-                rb.AddForce(Coll.impulse * 1, ForceMode.Impulse);
+                //rb.AddForce(Coll.impulse * 1, ForceMode.Impulse);
             }
         }
 
@@ -103,7 +113,7 @@ public class Break : MonoBehaviour
     }
     IEnumerator DestroyWithDelay()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         Destroy(gameObject);
     }
 

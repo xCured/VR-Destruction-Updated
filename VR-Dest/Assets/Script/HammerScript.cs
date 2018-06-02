@@ -7,8 +7,10 @@ public class HammerScript : MonoBehaviour
 
     public static int speed;
     Rigidbody rb;
+
    
 
+    public GameObject scoreTextPrefab;
 
 
     // Use this for initialization
@@ -19,6 +21,7 @@ public class HammerScript : MonoBehaviour
 
     private void Update()
     {
+       
         //setSize();
     }
     // Update is called once per frame
@@ -30,7 +33,13 @@ public class HammerScript : MonoBehaviour
         //Debug.Log(speed);
 
     }
-
+    public void ShowScore(float points)
+    {
+        Instantiate(scoreTextPrefab, transform.position, Quaternion.identity);
+        scoreTextPrefab.transform.LookAt(Camera.main.transform);
+        ScoreScript showPoints = scoreTextPrefab.GetComponent<ScoreScript>();
+        showPoints.showScore(points);
+    }
 
     //private void OnCollisionEnter(Collision Coll)
     //{
@@ -40,7 +49,7 @@ public class HammerScript : MonoBehaviour
     //        GameObject AOEClone = (GameObject)Instantiate(aoeOrigin, Coll.gameObject.transform.position, Quaternion.identity);
     //        AOEClone.transform.Rotate(new Vector3(90, 90, 90));
     //        Destroy(AOEClone, 0.3f);
-            
+
 
     //        //Quaternion rot = Quaternion.FromToRotation(Vector3.up, contact.normal);
     //        //Vector3 pos = contact.point;
@@ -52,7 +61,7 @@ public class HammerScript : MonoBehaviour
     //    }
 
     //}
-         
+
 }
 
 

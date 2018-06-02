@@ -113,6 +113,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &3512287 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1061949357269962, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &3512294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3512287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!1001 &58731911
 Prefab:
   m_ObjectHideFlags: 0
@@ -223,6 +247,30 @@ Transform:
   m_PrefabParentObject: {fileID: 4727538367732980, guid: 8c3b17f97072f2a48b08f6f9965f3484,
     type: 2}
   m_PrefabInternal: {fileID: 107796245}
+--- !u!1 &170657751 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1120813590229032, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &170657758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 170657751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!4 &201464991 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4017703006513258, guid: 611738668aeef9549a109663c060d124,
@@ -291,6 +339,78 @@ Transform:
   m_PrefabParentObject: {fileID: 4858062881151158, guid: 4b4568f3b92827c40a0a6ddd66253879,
     type: 2}
   m_PrefabInternal: {fileID: 215654575}
+--- !u!1 &249011913 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1606270615588610, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &249011920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249011913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
+--- !u!1 &253850723 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1507017263684262, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &253850730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253850723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
+--- !u!1 &268688869 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1111052879051482, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &268688876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268688869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!1001 &288525153
 Prefab:
   m_ObjectHideFlags: 0
@@ -400,6 +520,78 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 186bf6c44d8f9b840b1557e9ad147e2a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &295002712 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1140395986180022, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &295002719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295002712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
+--- !u!1 &313930244 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1768281112463584, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &313930251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313930244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
+--- !u!1 &354074415 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1827040702046850, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &354074422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 354074415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!1001 &362968770
 Prefab:
   m_ObjectHideFlags: 0
@@ -763,7 +955,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114766593906903102, guid: 002b007c8ac22a444bee0f272fc13bb1,
+        type: 2}
+      propertyPath: scoreTextPrefab
+      value: 
+      objectReference: {fileID: 1538763335942284, guid: 1d124c74c77fec345b5a7a68823f844e,
+        type: 2}
+    m_RemovedComponents:
+    - {fileID: 114441297426478950, guid: 002b007c8ac22a444bee0f272fc13bb1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 002b007c8ac22a444bee0f272fc13bb1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &482615901
@@ -1141,6 +1340,78 @@ Transform:
   m_PrefabParentObject: {fileID: 4727538367732980, guid: 8c3b17f97072f2a48b08f6f9965f3484,
     type: 2}
   m_PrefabInternal: {fileID: 876682188}
+--- !u!1 &908041722 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1699699985540802, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &908041729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 908041722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
+--- !u!1 &951714362 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1718391406645358, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &951714369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951714362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
+--- !u!1 &1026720986 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1558263772890294, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &1026720993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1026720986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!1001 &1041529908
 Prefab:
   m_ObjectHideFlags: 0
@@ -1243,6 +1514,30 @@ Transform:
   m_PrefabParentObject: {fileID: 4727538367732980, guid: 8c3b17f97072f2a48b08f6f9965f3484,
     type: 2}
   m_PrefabInternal: {fileID: 1059315412}
+--- !u!1 &1083616037 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1014951089206458, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &1083616044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083616037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!43 &1110449275
 Mesh:
   m_ObjectHideFlags: 0
@@ -1389,6 +1684,30 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &1136182405 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1862959701740856, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &1136182412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1136182405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!1 &1197585298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1749,30 @@ Transform:
   m_Father: {fileID: 406212031}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1392532460 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1589656980026514, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &1392532467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1392532460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!4 &1587302662 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4240398876271528, guid: 611738668aeef9549a109663c060d124,
@@ -1563,6 +1906,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1680810619 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1229429706412266, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &1680810626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1680810619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
+--- !u!1 &1713345887 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1211883630598938, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &1713345894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713345887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!1001 &1725812847
 Prefab:
   m_ObjectHideFlags: 0
@@ -1752,6 +2143,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1859742582 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1196298423689620, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &1859742589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1859742582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!1001 &2026442735
 Prefab:
   m_ObjectHideFlags: 0
@@ -1856,6 +2271,30 @@ Transform:
   m_Father: {fileID: 406212031}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &2062894258 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1645915768954180, guid: 186bf6c44d8f9b840b1557e9ad147e2a,
+    type: 2}
+  m_PrefabInternal: {fileID: 294861550}
+--- !u!114 &2062894265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2062894258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 40
+  V2: 60
+  V3: 100
+  Multi: 1
+  MaxPoints: 400
+  TotalScore: 0
+  givenPoints: 0
 --- !u!1001 &2087753401
 Prefab:
   m_ObjectHideFlags: 0

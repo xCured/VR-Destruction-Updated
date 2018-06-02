@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 114303079495422946}
   - component: {fileID: 114147775887341252}
   - component: {fileID: 114766593906903102}
+  - component: {fileID: 114441297426478950}
   m_Layer: 0
   m_Name: Sledge
   m_TagString: Hammer
@@ -230,6 +231,23 @@ MonoBehaviour:
   detachDistance: 1
   velocityLimit: Infinity
   angularVelocityLimit: Infinity
+--- !u!114 &114441297426478950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884649505500328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7b8a4becfdd1f428475beb82655282, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 0
+  V1: 20
+  V2: 40
+  V3: 80
+  Multi: 1
+  MaxPoints: 400
 --- !u!114 &114460556639809106
 MonoBehaviour:
   m_ObjectHideFlags: 1
