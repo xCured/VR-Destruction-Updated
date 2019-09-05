@@ -1,20 +1,7 @@
 # Hello welcome to my VR-Destruction game
 
-## How to get this repo (ArcAid) on your PC
-1. To do so, please make sure a SSH key is connected to your GitLab from your computer. If not, just google and follow the instructions [here](https://docs.gitlab.com/ee/gitlab-basics/create-your-ssh-keys.html)
-
-2. Find a folder on your PC to save it
-2. If you have SSH key done and dusted. To get this repo on your computer and available for you to edit, clone this repo by the following command:
-
-`git clone http://gitlab.doc.gold.ac.uk/tzach011/Personal-Project-VR-Destruction`
-3. After this the repo should be cloned on your PC in the file you wanted and this will allow you to
-`git commit -am`
-`git push`
-`git checkout`
 
 ## Find what your meant to be working on:
-
-
 Simply follow these instructions:
 1. Click on 'ISSUES' on the left hand of your screen
 2. Click on 'BOARD'3. Find your name
